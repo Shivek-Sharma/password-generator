@@ -18,14 +18,13 @@ body {
 .container {
     background-color: rgb(22, 22, 114);
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    padding: 30px;
     width: 40vw;
-    height: 60vh;
+    height: 70vh;
     border-radius: 15px;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+    justify-content: center;
 }
 
 h1 {
@@ -37,7 +36,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 40px;
-    margin: 20px 0;
+    margin: 20px 0 5px;
     position: relative;
     border-radius: 5px;
 }
@@ -61,6 +60,14 @@ h1 {
 
 .btn:hover {
     font-size: 22px;
+}
+
+p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: rgb(251, 78, 78);
+    text-align: justify;
+    display: none;
 }
 
 .form-input {
@@ -95,4 +102,33 @@ button:hover {
 .password-length:focus,
 button:focus {
     outline: 0;
+}
+
+@media (max-width: 920px) {
+    .container {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 470px) {
+    .container {
+        width: 90vw;
+        padding: 15px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .output span {
+        font-size: 15px;
+        padding: 11px 10px;
+    }
 }

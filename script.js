@@ -1,7 +1,8 @@
-// Characer Set Table -> https://net-comber.com/charset.html
+// Character Set Table -> https://net-comber.com/charset.html
 
 const result = document.getElementById('result');
 const clipboard = document.getElementById('clipboard');
+const hidden_text = document.getElementById('hidden-text');
 const password_length = document.getElementById('password-length');
 const uppercase = document.getElementById('uppercase');
 const lowercase = document.getElementById('lowercase');
@@ -68,6 +69,8 @@ generate.addEventListener('click', () => {
     const hasSymbols = symbols.checked;
 
     result.innerText = generatePassword(length, hasLower, hasUpper, hasNumbers, hasSymbols);
+
+    hidden_text.style.display = 'flex';
 });
 
 //copy password to clipboard

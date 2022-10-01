@@ -20,7 +20,7 @@ body {
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
     padding: 30px;
     width: 40vw;
-    height: 70vh;
+    height: fit-content;
     border-radius: 15px;
     display: flex;
     flex-direction: column;

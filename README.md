@@ -1,6 +1,8 @@
 # Password Generator
 Generate a random strong password of the length you choose and copy it to clipboard
 
+[Live Demo](https://shivek-password-generator.netlify.app/)
+
 # Project Specifications
 • Display UI with an option to enter password length                                                     
 • Options to check/uncheck to include uppercase and lowercase letters, numbers and symbols in password   
